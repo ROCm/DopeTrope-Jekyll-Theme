@@ -1,5 +1,5 @@
-name: ROCm Test Site
-description: ROCm site based on DopeTrope template for Jekyll
+name: ROCm Test 
+description: ROCm Software Plafrom Site for User and Developers
 paginate: 10
 baseurl: '/ROCm_Test'
 markdown: kramdown
