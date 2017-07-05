@@ -9,12 +9,13 @@
 				<nav id="nav">
 					<ul>
 						<li><a href="{{ site.baseurl }}/index.html">Home</a></li>
+						<li><a href="{{ site.baseurl }}/rocmdocumentation.html">Documentation</a></li>
 						<li>
-							<a href="">Dropdown</a>
+							<a href="">ROCm Ecosystem</a>
 							<ul>
 								<li><a href="{{ site.baseurl }}/blog">Blog</a></li>
-								<li><a href="#">Magna phasellus</a></li>
-								<li><a href="#">Etiam dolore nisl</a></li>
+								<li><a href="#">Twitter</a></li>
+								<li><a href="#">Applications</a></li>
 								<li>
 									<a href="">Phasellus consequat</a>
 									<ul>
@@ -25,13 +26,13 @@
 										<li><a href="#">Dolore adipiscing</a></li>
 									</ul>
 								</li>
-								<li><a href="#">Veroeros feugiat</a></li>
+								<li><a href="#">Tools</a></li>
 							</ul>
 						</li>
 						{% assign current = page.url | downcase | split: '/' %}
-						<li {% if current[1] == 'left-sidebar.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/left-sidebar.html">Left Sidebar</a></li>
-						<li {% if current[1] == 'right-sidebar.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/right-sidebar.html">Right Sidebar</a></li>
-						<li {% if current[1] == 'no-sidebar.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/no-sidebar.html">No Sidebar</a></li>
+						<li {% if current[1] == 'left-sidebar.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/left-sidebar.html">Tutorials</a></li>
+						<li {% if current[1] == 'right-sidebar.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/right-sidebar.html">Community</a></li>
+						<li {% if current[1] == 'no-sidebar.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/no-sidebar.html">Contribute</a></li>
 					</ul>
 				</nav>
 
