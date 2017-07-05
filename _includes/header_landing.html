@@ -3,42 +3,44 @@
 				<div id="header">
 
 					<!-- Logo -->
-						<h1><a href="index.html">Dopetrope</a></h1>
+						<h1><a href="index.html">ROCm Software Platfrom</a></h1>
 
 					<!-- Nav -->
 						<nav id="nav">
+						<ul>
+						<li><a href="{{ site.baseurl }}/index.html">Home</a></li>
+						<li><a href="{{ site.baseurl }}/rocmdocumentation.html">Documentation</a></li>
+						<li>
+							<a href="">ROCm Ecosystem</a>
 							<ul>
-								<li class="current"><a href="index.html">Home</a></li>
+								<li><a href="{{ site.baseurl }}/blog">Blog</a></li>
+								<li><a href="#">Twitter</a></li>
+								<li><a href="#">Applications</a></li>
 								<li>
-									<a href="">Dropdown</a>
+									<a href="">Phasellus consequat</a>
 									<ul>
-										<li><a href="{{ site.baseurl }}/blog">Blog</a></li>
 										<li><a href="#">Magna phasellus</a></li>
 										<li><a href="#">Etiam dolore nisl</a></li>
-										<li>
-											<a href="">Phasellus consequat</a>
-											<ul>
-												<li><a href="#">Magna phasellus</a></li>
-												<li><a href="#">Etiam dolore nisl</a></li>
-												<li><a href="#">Veroeros feugiat</a></li>
-												<li><a href="#">Nisl sed aliquam</a></li>
-												<li><a href="#">Dolore adipiscing</a></li>
-											</ul>
-										</li>
 										<li><a href="#">Veroeros feugiat</a></li>
+										<li><a href="#">Nisl sed aliquam</a></li>
+										<li><a href="#">Dolore adipiscing</a></li>
 									</ul>
 								</li>
-								<li><a href="{{ site.baseurl }}/left-sidebar.html">Left Sidebar</a></li>
-								<li><a href="{{ site.baseurl }}/right-sidebar.html">Right Sidebar</a></li>
-								<li><a href="{{ site.baseurl }}/no-sidebar.html">No Sidebar</a></li>
+								<li><a href="#">Tools</a></li>
 							</ul>
+						</li>
+						{% assign current = page.url | downcase | split: '/' %}
+						<li {% if current[1] == 'left-sidebar.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/left-sidebar.html">Tutorials</a></li>
+						<li {% if current[1] == 'right-sidebar.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/right-sidebar.html">Community</a></li>
+						<li {% if current[1] == 'no-sidebar.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/no-sidebar.html">Contribute</a></li>
+					</ul>
 						</nav>
 
 					<!-- Banner -->
 						<section id="banner">
 							<header>
-								<h2>Howdy. This is Dopetrope.</h2>
-								<p>A responsive template by HTML5 UP</p>
+								<h2>ROCm Software Platform.</h2>
+								<p>A new foundaton for HPC Class GPU Computing</p>
 							</header>
 						</section>
 
@@ -49,7 +51,7 @@
 									<section class="first">
 										<i class="icon featured fa-cog"></i>
 										<header>
-											<h2>Ipsum consequat</h2>
+											<h2>Red</h2>
 										</header>
 										<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
 									</section>
@@ -58,7 +60,7 @@
 									<section class="middle">
 										<i class="icon featured alt fa-flash"></i>
 										<header>
-											<h2>Magna etiam dolor</h2>
+											<h2>White</h2>
 										</header>
 										<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
 									</section>
@@ -67,7 +69,7 @@
 									<section class="last">
 										<i class="icon featured alt2 fa-star"></i>
 										<header>
-											<h2>Tempus adipiscing</h2>
+											<h2>Blue</h2>
 										</header>
 										<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
 									</section>
@@ -75,7 +77,7 @@
 							</div>
 							<footer>
 								<ul class="actions">
-									<li><a href="#" class="button big">Get Started</a></li>
+									<li><a href="#" class="button big">Getting Started</a></li>
 									<li><a href="#" class="button alt big">Learn More</a></li>
 								</ul>
 							</footer>
