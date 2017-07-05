@@ -1,5 +1,5 @@
 ---
-title: Lorem Ipsum Dolor Sit Amet
+title: ROCm Device Libraries
 featured: /assets/images/pic02.jpg
 layout: post
 ---
@@ -10,7 +10,7 @@ We are pleased to announce fully open-source bitcode device libraries for the RO
 
 The following libraries are available:
 
-* 8 Open Compute Math Library (OCML)—contains 250+ optimized math functions for single, double and half precision. See the OCML documentation for a list of currently supported functions.
+* Open Compute Math Library (OCML)—contains 250+ optimized math functions for single, double and half precision. See the OCML documentation for a list of currently supported functions.
 * Open Compute Kernel Library (OCKL)—contains many useful functions, including work-item/workgroup functions, integer optimization operations and wavefront reduce algorithms. It also serves as a foundation for the built-in library of the OpenCL-enabled compiler.
 * Compiler built-in library to support OpenCL.
 * Compiler built-in library for the HC mode of the Heterogeneous Compute Compiler (HCC).
