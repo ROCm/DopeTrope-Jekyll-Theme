@@ -27,9 +27,8 @@
 								<li><a href="#">Partner Showcase</a></li>
 							</ul>
 						</li>
-						{% assign current = page.url | downcase | split: '/' %}
-						<li {% if current[1] == 'left-sidebar.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/left-sidebar.html">Tutorials</a></li>
-						<a href="">Community</a></li>
+						<li>
+							<a href="">Community</a></li>
 							<ul>
 							        <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
 								<li><a href="https://www.youtube.com/watch?v=I7AfQ730Zwc">ROCm YouTube</a></li>
@@ -38,6 +37,9 @@
 								<li><a href="https://twitter.com/RadeonInstinct">Twitter</a></li>
 								<li><a href="https://www.meetup.com">Meetups</a></li>		
 							</ul>
+							</li>
+						{% assign current = page.url | downcase | split: '/' %}
+						<li {% if current[1] == 'left-sidebar.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/left-sidebar.html">Tutorials</a></li>
 						<li {% if current[1] == 'no-sidebar.html' %}class='current'{% endif %}><a href="{{ site.baseurl }}/no-sidebar.html">Contribute</a></li>
 					</ul>
 				</nav>
