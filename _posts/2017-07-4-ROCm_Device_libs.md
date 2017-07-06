@@ -1,5 +1,5 @@
 ---
-title: ROCm Compiler Device Libraries
+title: ROCm Performance Primative 
 featured: /assets/images/pic02.jpg
 layout: post
 ---
