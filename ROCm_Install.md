@@ -13,14 +13,21 @@ title: ROCm Install
 
 <h3>System Requirements</h3>
 
-<p>To use ROCm on your system you need the following: 
-* ROCm Capable CPU and GPU 
-    * PCIe Gen 3 Enabled CPU with PCIe Platform Atomics 
-    * ROCm enabled GPU&#39;s 
-        * Radeon Instinct Family MI25, MI8, MI6 
-        * Radeon Vega Frontier Edition 
-        * <a href="hardware.md">Broader Set of Tested Hardware</a>
-* Supported Version of Linux with a specified GCC Compiler and ToolChain </p>
+<p>To use ROCm on your system you need the following: </p>
+
+<ul>
+<li>ROCm Capable CPU and GPU 
+<ul>
+<li>PCIe Gen 3 Enabled CPU with PCIe Platform Atomics </li>
+<li>ROCm enabled GPU&#39;s 
+<ul>
+<li>Radeon Instinct Family MI25, MI8, MI6 </li>
+<li>Radeon Vega Frontier Edition </li>
+<li><a href="hardware.md">Broader Set of Tested Hardware</a></li>
+</ul></li>
+</ul></li>
+<li>Supported Version of Linux with a specified GCC Compiler and ToolChain </li>
+</ul>
 
 <p>Table 1. Native Linux Distribution Support in ROCm  1.6</p>
 
